@@ -3,7 +3,8 @@ import numpy as np
 from statsmodels.regression.quantile_regression import QuantReg
 import matplotlib.pyplot as plt
 
-# Load Current Stock and Product Importance Data
+# Load data
+data_df = pd.read_csv('trans_data.csv')
 current_stock_df = pd.read_csv('current_stock.csv')
 product_importance_df = pd.read_csv('product_importance.csv')
 
